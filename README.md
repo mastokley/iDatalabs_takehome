@@ -16,7 +16,7 @@ pip install -r requirements.txt
 3. Configure your environment:
 
 ```bash
-export FLASK_APP=app
+source .env
 ```
 
 4. Run the application:
