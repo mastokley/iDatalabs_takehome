@@ -1,29 +1,38 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8" />
-    <title>iDatalabs Takehome Problem - Michael Stokley</title>
-    <link rel="stylesheet" href="../static/jquery-ui.css">
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <title>iDatalabs Takehome Problem - Michael Stokley</title>
+        <link rel="stylesheet" href="../static/jquery-ui.css">
+    </head>
 
-<body>
+    <body>
+        <div class="ui-widget">
+            <label for="product">Enter a product: </label>
+            <input id="product">
+            <input type="submit" value="View Companies" id="viewCompanies">
+        </div>
 
-    <div class="ui-widget">
-        <label for="product">Enter a product: </label>
-        <input id="product">
-        <input type="submit" value="View Companies" id="viewCompanies">
-    </div>
+        <div id="canvas-holder" style="width:25%">
+            <canvas id="chart-area" width="300" height="300"></canvas>
+        </div>
 
-    <!-- scripts -->
-    <script
-        src="https://code.jquery.com/jquery-3.1.1.min.js"
-        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-        crossorigin="anonymous"></script>
-    <script
-        src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-        crossorigin="anonymous"></script>
-    <script
-        src="../static/script.js"></script>
-</body>
+        <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../static/jquery-3.1.1.min.js"><\/script>')</script>
+
+        <script
+            src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
+        <script>window.jQuery.ui || document.write('<script src="../static/jquery-ui.min.js"><\/script>')</script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script>window.Chart || document.write('<script src="../static/Chart.min.js"><\/script>')</script>
+
+        <script src="../static/script.js"></script>
+    </body>
+</html>
