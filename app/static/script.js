@@ -44,12 +44,12 @@ $(function () {
         $("#viewCompanies").button().click(function (event) {
             event.preventDefault();
 
-            /*
-             this third party API call (which is proxied) takes a long time
-             TODO app ought to display spinner while data is loading
-             there doesn't seem to be much opportunity for pre-loading
-             you could, however, cache results once loaded
-            */
+            /**
+             * this third party API call (which is proxied) takes a long time
+             * TODO app ought to display spinner while data is loading
+             * there doesn't seem to be much opportunity for pre-loading
+             * you could, however, cache results once loaded
+             */
 
             $.get("/companies/" + productsObj[productEl.val()], function (data) {
                 if (data.status !== "success") {
